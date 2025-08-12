@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+@keyframes spin {
+  0%{
+   transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.slowspin{
+  animation: spin 15000ms linear infinite;
+}
+.jet{
+    font-family: "JetBrains Mono", monospace;
+
+}
+.space{
+ font-family: "Space Grotesk", sans-serif;
+}
+@keyframes lazyload {
+  0%{
+  
+   background-color: black;
+  }
+  100%{
+    background-color: white;
+  }
+}
+.lazy{
+animation: lazyload 1000ms linear;
+}
+.blurit {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px); /* For Safari compatibility */
+}
+.rnd-no-transform > div {
+  transform: none !important;
+}
